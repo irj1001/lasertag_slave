@@ -2,7 +2,6 @@ enum Equipment {
     Gun,
     Headset
 }
-
 namespace lasertag_slave {
     //% block="Connect headset and gun | number $x"
     //% x.min=1 x.max=65
@@ -31,7 +30,7 @@ namespace lasertag_slave {
     export function setup_slave(){
         radio.setTransmitSerialNumber(true)
         radio.setTransmitPower(1)
-        if (connected==true){
+        if (connected){
 
 
 
